@@ -1,0 +1,135 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Wed May 30 22:18:32 2018
+| Host         : LAPTOP-7QN97TGU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SingleCPU_control_sets_placed.rpt
+| Design       : SingleCPU
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    82 |
+| Minimum Number of register sites lost to control set restrictions |    22 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              20 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            6 |
+| Yes          | No                    | No                     |             499 |          295 |
+| Yes          | No                    | Yes                    |             487 |          330 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+-------------------------+-------------------+------------------+----------------+
+|   Clock Signal   |      Enable Signal      |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------+-------------------------+-------------------+------------------+----------------+
+|  CLK_Q_IBUF_BUFG |                         |                   |                1 |              3 |
+|  cu/O212[0]      |                         |                   |                3 |              7 |
+|  CLK_IBUF_BUFG   | pc/PCWre                | rf/O1             |                4 |              7 |
+| ~CLK_IBUF_BUFG   | cu/O78[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O76[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O75[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O74[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O73[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O72[0]               |                   |                7 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O71[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O70[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O69[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O68[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O66[0]               |                   |                2 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O65[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O64[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O63[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O62[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O61[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O60[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O58[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O57[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O56[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O55[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O54[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O53[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O52[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O51[0]               |                   |                7 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O49[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O47[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O46[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O45[0]               |                   |                2 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O44[0]               |                   |                7 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O43[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O42[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O41[0]               |                   |                2 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O40[0]               |                   |                7 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O39[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O38[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O37[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O34[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O33[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O29[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O24[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O23[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O100[0]              |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O80[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O81[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O82[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O83[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O84[0]               |                   |                7 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O85[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O86[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O88[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O89[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O90[0]               |                   |                4 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O91[0]               |                   |                3 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O92[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O93[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O96[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O97[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O98[0]               |                   |                6 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O99[0]               |                   |                5 |              8 |
+| ~CLK_IBUF_BUFG   | cu/O79[0]               |                   |                6 |              8 |
+|  pc/O102[0]      |                         |                   |                5 |             10 |
+|  CLK_Q_IBUF_BUFG | n_0_display_out[10]_i_1 |                   |                6 |             11 |
+|  CLK_Q_IBUF_BUFG |                         | n_0_count[19]_i_1 |                6 |             20 |
+| ~CLK_IBUF_BUFG   | pc/O83[0]               | rf/O1             |               19 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O82[0]               | rf/O1             |               23 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O81[0]               | rf/O1             |               18 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O80[0]               | rf/O1             |               18 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O79[0]               | rf/O1             |               24 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O78[0]               | rf/O1             |               23 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O77[0]               | rf/O1             |               25 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O75[0]               | rf/O1             |               23 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O74[0]               | rf/O1             |               19 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O73[0]               | rf/O1             |               22 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O72[0]               | rf/O1             |               24 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O71[0]               | rf/O1             |               22 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O70[0]               | rf/O1             |               26 |             32 |
+| ~CLK_IBUF_BUFG   | pc/E[0]                 | rf/O1             |               19 |             32 |
+| ~CLK_IBUF_BUFG   | pc/O76[0]               | rf/O1             |               21 |             32 |
++------------------+-------------------------+-------------------+------------------+----------------+
+
+

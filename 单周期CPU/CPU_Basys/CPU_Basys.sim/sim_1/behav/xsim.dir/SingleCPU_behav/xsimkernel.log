@@ -1,0 +1,5 @@
+Running: xsim.dir/SingleCPU_behav/xsimk.exe -simmode gui -wdb SingleCPU_behav.wdb -simrunnum 0 -socket 51523
+Design successfully loaded
+Design Loading CPU Usage: 374 ms
+Simulation completed
+Simulation CPU Usage: 390 ms

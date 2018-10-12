@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "SingleCPU_behav" --prj "D:/Vivado_Project/CPU_Basys/CPU_Basys.sim/sim_1/behav/SingleCPU.prj" "xil_defaultlib.SingleCPU" "xil_defaultlib.glbl" 

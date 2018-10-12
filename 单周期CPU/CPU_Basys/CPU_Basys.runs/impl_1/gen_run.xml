@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1527689876">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="SingleCPU_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="SingleCPU_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SingleCPU_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="SingleCPU.tcl"/>
+  <File Type="OPT-DCP" Name="SingleCPU_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SingleCPU_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SingleCPU_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SingleCPU_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SingleCPU_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SingleCPU_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SingleCPU_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SingleCPU_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SingleCPU_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SingleCPU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SingleCPU_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="SingleCPU_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SingleCPU_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="SingleCPU_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="SingleCPU_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SingleCPU_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SingleCPU_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="SingleCPU_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SingleCPU_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SingleCPU_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SingleCPU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="SingleCPU_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SingleCPU_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SingleCPU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="SingleCPU.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SingleCPU_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="SingleCPU.bit"/>
+  <File Type="BG-BIN" Name="SingleCPU.bin"/>
+  <File Type="BITSTR-MSK" Name="SingleCPU.msk"/>
+  <File Type="BITSTR-RBT" Name="SingleCPU.rbt"/>
+  <File Type="BITSTR-NKY" Name="SingleCPU.nky"/>
+  <File Type="BITSTR-BMM" Name="SingleCPU_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SingleCPU.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="SingleCPU.sysdef"/>
+  <File Type="BG-BGN" Name="SingleCPU.bgn"/>
+  <File Type="BG-DRC" Name="SingleCPU.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/SingleCPU.xdc">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>
